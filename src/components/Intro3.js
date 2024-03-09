@@ -1,4 +1,4 @@
-function Intro3() {
+function Intro3(props) {
   return (
     <div className="blog-post-intro">
       <h2>What's the best way to style your React apps?</h2>
@@ -7,7 +7,9 @@ function Intro3() {
           There are so many options to choose from. Here's a high-level overview
           of the popular ones.
         </p>
-        <p className="link">Read more...</p>
+        <p className="link">
+          Read more...<h1>{props.prop2}</h1>
+        </p>
       </div>
     </div>
   );
